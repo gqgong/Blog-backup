@@ -1,0 +1,9 @@
+defaultlinks:
+  - name: 暮雨千泷 # 网站名称
+    site: https://www.myql.xyz # 网站地址
+    info: 青天白日梦神仙 # 网站描述
+    avatar: https://cdn.jsdelivr.net/gh/leicancun/img@main/images/avatar.webp # 网站头像
+  - name: 雨轩阁
+    site: https://yuxuange.top/
+    info: 丢掉幻想，准备斗争
+    avatar: https://cdn.jsdelivr.net/gh/gqgong/MyBlog/Images/avatar.png
