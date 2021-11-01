@@ -3,25 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 雨轩阁
-subtitle: 丢掉幻想，准备斗争
-description: 心之所向，素履以往
-keywords: 博客/日志/生活
-author: 雅轩
-language: zh-CN
+title: Hexo
+subtitle: ''
+description: ''
+keywords:
+author: John Doe
+language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://yuxuange.top
-permalink: article/:abbrlink.html/
+url: http://example.com
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
-abbrlink:
-  alg: crc32  #算法： crc16(default) and crc32
-  rep: hex   #进制： dec(default) and hex
 
 # Directory
 source_dir: source
@@ -99,81 +96,10 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-# plugins: hexo-generator-sitemap
-# plugins: hexo-generator-baidu-sitemap
-
-#压缩
-# all_minifier: true
-# js_concator:
-#   enable: false
-#   bundle_path: '/js/bundle.js'
-#   front: false
-#   silent: false
-# html_minifier:
-#   enable: true
-#   ignore_error: false
-#   silent: false
-#   exclude:
-# css_minifier:
-#   enable: true
-#   silent: false
-#   exclude:
-#     - '*.min.css'
-# js_minifier:
-#   enable: true
-#   mangle: true
-#   silent: false
-#   output:
-#   compress:
-#   exclude:
-#     - '*.min.js'
-# image_minifier:
-#   enable: true
-#   interlaced: false
-#   multipass: false
-#   optimizationLevel: 2
-#   pngquant: false
-#   progressive: false
-#   silent: false
-
-
-# 自动生成sitemap
-sitemap:
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
-
-baidu_url_submit:
-  count: 100 ## 比如3，代表提交最新的三个链接
-  host: https://www.yuxuange.top ## 在百度站长平台中注册的域名
-  token: ArAhHuKjUtdOGMw8 ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
-  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
-
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
-  exclude_codeblock: true
-  awl: 4
-  wpm: 275
-  suffix: "mins."
-## 本地搜索
-search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-
-
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-- type: git
-  repo: https://github.com/gqgong/gqgong.github.io
-  branch: master
-
-- type: baidu_url_submitter
+  type: ''
