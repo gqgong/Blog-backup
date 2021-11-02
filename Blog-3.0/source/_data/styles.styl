@@ -1,0 +1,229 @@
+body {
+//  background:url(https://source.unsplash.com/random/1600x900);
+//    background:url(/images/background.jpg);
+//    background-repeat: no-repeat;
+//    background-attachment:fixed;
+//   background-position:50% 50%;
+    // background:#6a898a85;                    // 添加背景颜色
+}
+
+// code {
+    // color: #ff7600;
+    // background: #fbf7f8;
+    // margin: 2px;
+// }
+// 边框的自定义样式
+// .highlight, pre {
+    // margin: 5px 0;
+    // padding: 5px;
+    // border-radius: 3px;
+// }
+// .highlight, code, pre {
+  //  border: 1px solid #d6d6d6;
+// }
+
+//侧边栏导航页上背景
+.site-brand-container {
+    background: url(https://cdn.jsdelivr.net/gh/gqgong/MyBlog/Images/202110231631280.png);
+    background-position: 80% 60%;
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+}
+
+//顶部横线透明化且线宽为0，删掉顶部横线
+.headband {
+    background: #fff0 ;
+    height: 0px ;
+}
+
+.main-inner {
+    margin-top: 7px; 
+    //padding: 20px;
+}
+
+
+
+//与顶层保持一定距离
+.header, .main-inner {
+    //margin-top: 2px;
+}
+
+// 标签的美化,使用圆形方框美化
+.tag-cloud a {
+    box-shadow: 0 1px 3px #6f42c1, 0 1px 2px #d9534f;
+    padding: 2px 10px;
+    margin: 8px;
+    background: #c1425c00;
+    border-bottom: none;
+    border-radius: 20px;
+}
+
+// 美化归档栏整体布局,调整时间日期
+.posts-collapse .post-meta {
+    color: #5073b8;
+    font-weight: 900;
+}
+.posts-collapse .post-title {
+    margin-left: 70px;
+}
+
+// 美化标签底部选择按钮(1.2.3.4.5)颜色
+.pagination .page-number.current {
+    background: #a166ab;
+    border-radius: 20px 20px 20px 20px;
+}
+.pagination .prev, .pagination .next, .pagination .page-number {
+    color: blueviolet;
+    font-weight: 500;
+    border-radius: 30px 30px 30px 30px;
+}
+
+// 归档的美化,设置归档方框美化
+.posts-collapse .post-header {
+position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: inherit;
+    padding: 10px;
+    box-shadow: 0 0 14px #cacbcb;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    border-bottom: 1px dashed #f9f9f9;
+    box-shadow: 0 1px 3px #6f42c100, 0 1px 2px #6f42c1;
+    padding: 2px 10px;
+    margin: 8px;
+    background: #c1425c00;
+    border-bottom: none;
+    border-radius: 20px;
+}
+
+// 针对阅读全文按钮的美化
+.post-button .btn {
+    color: #555!important;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 16px;
+    box-shadow: inset 0 0 10px 0 #e346035c;
+    border: none!important;
+    transition-property: unset;
+    padding: 0 15px;
+    border-radius: 28px 28px 28px 28px;
+}
+
+// 文章分类页面中,标签的颜色属性.
+.category-list a{
+  color:#6f42c1;
+}
+
+// 光标放到文章列表上面的时候,会变成彩色
+.posts-expand .post-title-link::before {
+    background-image: linear-gradient(90deg,#a166ab 0,#ef4e7b 25%,#f37055 50%,#ef4e7b 75%,#a166ab 100%);
+}
+
+// 针对strong标签的美化效果.
+strong{
+font-weight: bold;
+    // background-color: #9f95ff;
+    //border-radius: 39px;
+    color: #171be7;
+    padding-left: 0px;
+    padding-right: 1px;
+    text-shadow: 1px 1px 1px #0003;
+}
+
+// 鼠标选择的段落变成黄色
+::selection {
+    background-color: #fdbc40a6;
+    color: #555;
+}
+
+#links{
+	margin-top: 5rem;
+	.links-content{
+		margin-top:1rem;
+	}
+	.link-navigation::after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+	.card {
+		width: 300px;
+		font-size: 1.1em;
+		padding: 10px 20px;
+		border-radius: 4px;
+		transition-duration: 0.15s;
+		margin-bottom: 1rem;
+		display:flex;
+	}
+	.card:nth-child(odd) {
+		float: left;
+	}
+	.card:nth-child(even) {
+		float: right;
+		+mobile() {
+			float: left;
+		}
+	}
+	.card:hover {
+		transform: scale(1.1);
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+		background: rgba(68, 68, 68, 0.12)
+	}
+	.card a {
+		border:none;
+	}
+	.card .ava {
+		width: 3rem!important;
+		height: 3rem!important;
+		margin:0!important;
+		margin-right: 1em!important;
+		border-radius:50%
+		transition: transform 1s ease-out;
+	}
+	.ava:hover {
+			transform: rotateZ(360deg);
+		}
+	.card .card-header {
+		font-style: italic;
+		overflow: hidden;
+		width: 236px;
+	}
+	.card .card-header a {
+		font-style: normal;
+		color: #2bbc8a;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.card .card-header a:hover {
+		color: #d480aa;
+		text-decoration: none;
+	}
+	.card .card-header .info {
+		font-style:normal;
+		color:#a3a3a3;
+		font-size:14px;
+		min-width: 0;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	span.focus-links{
+		vertical-align:1px;
+		font-style:normal;
+		margin-left:10px;
+		position:unset;
+		left:0;
+		padding:0 7px 0 5px;
+		font-size:11px;
+		border-color:#42c02e;
+		border-radius:40px;
+		line-height:24px;
+		height:24px;
+		color:#fff!important;
+		background-color:#2bbc8a;
+		display:inline-block
+		}
+	span.focus-links:hover{background-color:#318024}
+}
